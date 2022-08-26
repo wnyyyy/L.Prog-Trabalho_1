@@ -16,4 +16,4 @@ class Token:
                 break
 
     def __repr__(self):
-        return '({}, {}, {})'.format(self.name, self.lexema, self.id)
+        return '({}, \"{}\", {})'.format(self.name, self.lexema, self.id)
