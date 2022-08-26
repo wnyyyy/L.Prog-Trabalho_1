@@ -10,7 +10,7 @@ class Token:
         for lexema_type in LexemaTypes:
             match = re.match(lexema_type.value.regex, string)
             if match:
-                self.lexema = match.string.lstrip()
+                self.lexema = match.group(0).lstrip()
                 self.id = lexema_type.value.id
                 self.name = lexema_type.name
                 break
