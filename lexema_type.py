@@ -11,7 +11,7 @@ class LexemaTypes(Enum):
         regex = r'\s*[a-zA-Z]{1}[0-9a-zA-Z_]{0,98}',
         id = 1)
     NUM = LexemaType(
-        regex = r'\s*[1-9]\d{0,98}',
+        regex = r'\s*(0{1}|[1-9]\d{0,98})',
         id = 2)
     LPAR = LexemaType(
         regex = r'\s*\({1}',
@@ -41,5 +41,5 @@ class LexemaTypes(Enum):
         regex = r'\s*\={2}',
         id = 11)
     ASSIGNOP = LexemaType(
-        regex = r'\s*\(\:={1})',
+        regex = r'\s*(\:\={1})',
         id = 12)
