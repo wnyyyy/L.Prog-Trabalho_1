@@ -11,9 +11,7 @@ def Lexify(inputString):
         else:
             inputString = inputString[length:]
             tokens.append(token)
-
     return tokens
-
 
 def Test(tokens):
     print(f'\nQuantidade de tokens: {len(tokens)}')
@@ -21,13 +19,12 @@ def Test(tokens):
     result = ''
     for token in tokens:
         print(token)
-        result += token.lexema
-    
+        result += token.lexema    
     print('\nInput reconstruído:')
     print(result)
 
-
-input = "\n\rASDF823gf \n\r\t  *\n\r\t   A\n\r\t   := \n\r\t  0\n\r\t  +\n\r\t  101\n\r\t  -\n\r\t  b9\n\r\t  *\n\r\t  1234\n\r\t  /\n\r\t  2\n\r\t  <\n\r\t  1\n\r\t  >\n\r\t  ==\n\r\t  asdf\n\r\t  "
-
-tokens = Lexify(input)
-Test(tokens)
+while(True):
+    print('\nDigite uma string de entrada:')
+    entry = input()
+    tokens = Lexify(entry)
+    Test(tokens)
