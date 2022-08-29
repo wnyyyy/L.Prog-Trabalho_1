@@ -1,3 +1,5 @@
+## Nomes: Vinícius C. Lima e Bruna Chiochetta
+
 from token_builder import Token
 
 ## gera uma lista de token a partir de uma string de entrada e retorna essa lista
