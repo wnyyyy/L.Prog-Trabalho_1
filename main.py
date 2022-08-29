@@ -32,7 +32,7 @@ def Test(tokens):
     print(result)
 
 while(True):
-    print('\nDigite uma string de entrada:')
+    print('\nDigite uma string de entrada e aperte enter:')
     entry = input()
     tokens = Lexify(entry)
     Test(tokens)
